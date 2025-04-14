@@ -1,5 +1,5 @@
 def is_palindrome(userPhrase: str)-> bool:
-    return False 
+    return userPhrase == userPhrase[::-1] 
 
 
 if __name__ == '__main__':
