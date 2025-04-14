@@ -14,5 +14,10 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("No lemon, no melon"))
         self.assertTrue(is_palindrome("Anita lava la tina"))
 
+    def test_non_palindromes(self):
+        self.assertFalse(is_palindrome("hello"))
+        self.assertFalse(is_palindrome("python"))
+        self.assertFalse(is_palindrome("This is not a palindrome"))
+        self.assertFalse(is_palindrome("computacion"))
 if __name__ == '__main__':
     unittest.main()
